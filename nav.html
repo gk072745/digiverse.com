@@ -20,6 +20,7 @@
             display: flex;
             justify-content: space-around;    
             height: 50px;
+          
         }
         
         #user{
@@ -33,13 +34,12 @@
      
      #user :nth-child(1){
         background-color: transparent;
+        font-family: sans-serif;
+        font-size: small;
         border: none;
-        color:rgb(145, 145, 145);
+        color:rgb(142,157,155);
      }
-     #user>.arrow{
-        border: none;
-        font-size: 20px;
-     }
+   
      #user :nth-child(3){
         background-color: transparent;
         border:1px solid rgb(196, 196, 196);
@@ -50,11 +50,12 @@
      }
 
      #user :nth-child(4){
+
         background-color:rgb(11, 168, 129);
         border:none;
         border-radius: 4px;
         padding: 5px 15px;
-        color: #fff;
+        color: rgb(255, 255, 255);
         margin: auto;
 
      }
@@ -65,9 +66,7 @@
         }
         
       #nav h5:hover{
-            width: 100%;
-            color: #fff;
-            
+            color: #fff;  
         }
 
        
@@ -78,37 +77,105 @@
             align-items: center;
               
         }
-        .arrow{
-    transform: rotate(+90deg);
-    background-color: transparent;
-    border:none;
-    color: #fff;
-}
+
        #nav h5{
-            color:rgb(201, 197, 197);
+            color:rgb(142,157,155);
             margin:2%;
             font-family:"Factor A", Arial, Helvetica, sans-serif;
-            font-size: 14px;       
+            font-size: 14px;  
+            font-weight: 300;     
         }
         #secondDiv{
-            font-family: sans-serif;
-            color: #fff;
-                   padding-top: 100px;
-                text-align: center;
-
-                background-image: url(semrush-bg-640x853.jpg);             
-                 background-color:rgb(66,25,131);
-                  background-size: 100%;
-                  background-repeat: no-repeat;
-                  padding-bottom: 20%;
+             font-family: sans-serif;
+             color: #fff;
+             padding-top: 100px;
+             text-align: center;
+             background-image: url(semrush-bg-640x853.jpg);             
+             background-color:rgb(66,25,131);
+             background-size: 100%;
+             background-repeat: no-repeat;
+             padding-bottom: 20%;
         }
+        #secondDiv>h2{
+            width: 40%;
+            line-height:31.5px;
+            margin: auto;
+            FONT-SIZE:22px;
+            margin-bottom: 3%;
+            font-weight: 300;
+        }
+       #domain {
+        display: flex;
+        border:1px  #ad3000 solid ;
+    
+       }
+
+
+        #domain div{
+                  display: flex;
+                  justify-content: center;
+                  width: 35%;
+       }
+
+       #domain input{
+        width:70%;
+       font-size: 18px;   
+       height: 100%; 
+    }
+
+    #domain input::placeholder{
+       color: rgb(183,183,182);
+       font-size: 16px;
+    }
 
 
 
+       #flag{
+        display: flex;
+        width: 7%;
+        height: 70%;
+        margin-left: 15px;
+
+       }
+       
+
+   
         #secondDiv>h1{
             width: 50%;
             margin: auto;
             font-size: 350%;
+            margin-bottom: 3%;
+        }
+
+        #services{
+            width: 90%;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            position: relative;
+            top: -250px;
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+ }
+
+
+         #client p{
+           color: rgb(183,183,182);
+           font-size: 17px;
+             font-weight: bold;
+             margin: 2%;
+            margin-top: 5%;
+        }
+
+        #client img{
+            margin: 1.5%;
+            margin-bottom: 10%;
+        }
+
+        #client h1{
+            font-size: 300%;
             margin-bottom: 3%;
         }
 
@@ -117,37 +184,27 @@
             display: flex;
             width: 96%;
             padding-left: 4%;
-           align-items: center;
-           text-align: center;
+            padding-top: 5%;
+            text-align: center;
             margin: auto;
-            position: relative;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 25px;
             margin-top: 2%;
             margin-bottom: 4%;   
+        }
 
-        }
         #logos>div{
-            width: 15%;
-        }
+                  width: 15%;
+                  }
         
         #logos img{margin: 10%;
-            width: 20%;
+            width: 35%;
         }
 
-        #secondDiv>h2{
-            width: 43%;
-
-       
-
-            line-height:31.5px;
-            margin: auto;
-            FONT-SIZE:22px;
-            margin-bottom: 3%;
-        }
+     
 
         #secondDiv form{
-            display: flex;
+          display: flex;
          justify-content: center;
          align-items: center;
         }
@@ -158,16 +215,13 @@
             border-radius: 5px;
             margin-bottom: 1%;
         }
+
         #secondDiv  select{
             border-radius: 5px;
             padding: 7px;
         
         }
 
-        #secondDiv  p{
-            margin: 2%;
-            margin-top: 5%;
-        }
       
         #client>img{
             margin: 1%;
@@ -178,6 +232,7 @@
         padding: 0% 5%;
         font-family: sans-serif;
     }
+    
     #decs>div:first-child{
         padding-top: 1%;
         width: 45%;
@@ -188,6 +243,10 @@
     #decs>div h2{
             color: rgb(22, 22, 22);
          margin-bottom: 15px;
+         width: 90%;
+         font-size: 200%;
+         line-height: 40px;
+         font-family:  Ubuntu, Cantarell, sans-serif;
     }
     #decs img{
         width: 100%;
@@ -200,14 +259,18 @@
         text-align: center;
         line-height: 45px;
     }
-
+  #decs li{
+    font-family:   sans-serif;
+   
+;
+  }
     #decs button{
         font-family: sans-serif;
         margin-top: 5%;
         border: none;
         background-color:rgb(255,98,45);
         border-radius: 5px;
-        padding: 10px 15px;
+        padding: 15px 20px;
         color: #fff;
         font-size: 18px;
     }
@@ -215,26 +278,32 @@
 
    
     
- #services{
-            width: 70%;
-           align-items: center;
-           text-align: center;
-            margin: auto;
-            position: relative;
-            top: -250px;
-            background-color: #fff;
-            border-radius: 10px;
 
- }
-
-#mario>div>div>h1,#mar{
-    font-size:70;
+#mario>h1{
+   
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-size: 45px;
     margin-bottom: 5%;
+    line-height: 55px;
+    color: rgb(23,26,34);
 }
 
-#abc>div>h3+h3{
-    font-weight: 300;
+#mario>h3{
+    color:rgb(23,26,34) ;
+    margin-top: 1%;
 }
+#mario>p{
+    color: rgb(27,30,37);
+    margin: 10px;
+}
+#mario>p+p{
+  color: rgb(194,195,198);
+  margin-top: 0%;
+  margin-bottom: 5% ;
+}
+
 
 #mario{ font-family: sans-serif;
    display: flex;
@@ -243,21 +312,18 @@
      margin: auto;
 
 }
-#mario>p{
-       margin: 10px;
-}
+
+
 #mario>h1~h1{
-   width: 40%;
-}
-#mario>p+p{
-    margin-bottom: 5% ;
-    color: rgb(160, 160, 160);
+   width: 60%;
 }
 
-#abc{
+
+
+#states{
     font-family: sans-serif;
     display: flex;
-    width: 70%;
+    width: 90%;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -265,18 +331,64 @@
     margin-top: 10%;
 }
 
-#abc>div{
+#states>div{
     margin: 1%;
-    width: 30%;
+    width: 32%;
     text-align: center;}
 
-    #mario3>h3{
+    #states>div>h3{
+    line-height: 30px;
+    color:  rgb(29,32,40);
+    }
+
+    #states>div>h3+h3{
+    font-weight: 300;
+   color:  rgb(29,32,40);
+
+    
+}
+
+#mario3>h3{
         font-weight: 300;
+        line-height: 30px;
+        width: 65%;
+        margin: auto;
     }
     #mario3 b{
         font-size: 24px;
         font-weight: 600;
     }
+
+  #mario>div>div> h1{
+    font-size: 4.5em;
+  }
+#states>#mario1{
+    padding-top: 3%;
+    background-image: url(heart.png);
+    background-size:25% ;
+    background-position-x: 78%;
+    background-position-y:5% ;
+    background-repeat: no-repeat;
+}
+
+#states>#mario2{
+    padding-top: 3%;
+    background-image: url(star.png);
+    background-size:25% ;
+    background-position-x: 65%;
+    background-position-y:5% ;
+    background-repeat: no-repeat;
+}
+   
+#states>#mario3{
+    padding-top: 3%;
+    background-image: url(diomond.png);
+    background-size:40% ;
+    background-position-x:80%;
+    background-position-y:10% ;
+    background-repeat: no-repeat;
+}
+   
 
     #growth{
         display: flex;
@@ -307,6 +419,7 @@
       grid-template-rows: repeat(2,100px);
       gap: 10px;
       margin-top: 3%;
+
     }
     #growth>div+div>div{
         box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1px 20px;
@@ -581,6 +694,24 @@
 #end p{
     font-size: 11px;
 }
+.arrow {
+  border: solid rgb(137,141,154);;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px 4px;
+
+}
+
+.arrow:hover{
+   border: solid #fff; 
+   border-width: 0 2px 2px 0;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
 
     </style>
 </head>
@@ -591,17 +722,17 @@
                   <img id="logo" src="https://www.semrush.com/lp/sem-aeoy/img/logo-white.svg" alt="">
                 <h5>Features </h5>
                 <h5>Pricing</h5>
-                <h5>Resources <button class="arrow">></button></h5>
-                <h5>Company <button class="arrow">></button></h5>
-                <h5>App Center <button class="arrow">></button></h5>
-                <h5>Extra tools <button class="arrow">></button></h5>
+                <h5>Resources  &nbsp <i class="arrow down"></i></h5>
+                <h5>Company   &nbsp <i class="arrow down"></i></h5>
+                <h5>App Center   &nbsp <i class="arrow down"></i></h5>
+                <h5>Extra tools   &nbsp <i class="arrow down"></i></h5>
         
            </div> 
 
         <div id="user">
               
                 <h3>EN &nbsp</h3>
-                <button class="arrow">> </button>
+                <i class="arrow down"></i>
                 &nbsp
                 <a href="login.html">  <button> Log In</button></a>
                <a href="signup.html"><button>Sign Up</button></a> 
@@ -616,27 +747,26 @@
           <h1>Get measurable results from online marketing</h1>
           <h2>Do SEO, content marketing, competitor research,
             PPC and social media marketing from just one platform.</h2>
-            <form action="">
-                <div>
-                    <input type="text" placeholder="Enter domain, keyword or URL">
-               <select class="selectpicker">
-  <option>UK</option>
-  <option>Germany</option>
-  <option>France</option>
-</select>
+     
 
-          
-                </div>
-<input type="submit">
-            </form>
+   <div id="domain" >
+     
+       <div>
+          <input type="text" placeholder="Enter domain, keyword or URL">
+          <img  id="flag" src="https://cdn-icons-png.flaticon.com/512/555/555526.png" alt=""> 
+       </div>
+            <button>submit</button>
+ </div>
 
-            <p>Trusted by the world’s leading brands</p>
+
+
+
+
+
+
+           
             <div id="client">
 
-          <input type="submit">
-                </div>
-
-            </form>
 
             <p>Trusted by the world’s leading brands</p>
             <div>
@@ -659,7 +789,7 @@
               <div id="logos">
                   <div><img src="images\sco.png" alt="">
                 <p>SEO</p></div>
-                  <div><img src="images\con mark.png" alt="">
+                  <div ><img style="width:27%" src="images\con mark.png" alt="">
                 <p>Content Marketing</p></div>
                   <div><img src="images\mark.png" alt="">
                 <p>Market Research</p>  </div>
@@ -695,13 +825,13 @@
 
 
     <h1>Award-winning tools trusted by the world’s leading companies</h1>
-    <div id="abc">
+    <div id="states">
         <div id="mario1">
          <h1>10M</h1>
          <h3>marketing professionals</h3>
          <h3>have already used Semrush</h3>
         </div>
-        <div>
+        <div id="mario2">
                 <h1>21</h1>
          <h3>international awards</h3>
          <h3>as best SEO software suite</h3>
