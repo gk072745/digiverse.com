@@ -44,9 +44,16 @@
         background-color: transparent;
         border:1px solid rgb(196, 196, 196);
         border-radius: 4px;
-        padding: 5px 10px;
+        padding: 7px 15px;
         color: #fff;
         margin: auto;
+     }
+     #user :nth-child(3):hover{
+        background-color: #a1a6af;
+     }
+
+     #user :nth-child(3)>button{
+         color: #fff;
      }
 
      #user :nth-child(4){
@@ -54,10 +61,16 @@
         background-color:rgb(11, 168, 129);
         border:none;
         border-radius: 4px;
-        padding: 5px 15px;
+        padding: 7px 15px;
         color: rgb(255, 255, 255);
         margin: auto;
 
+     }
+     #user :nth-child(4):hover{
+        background-color:  #008275;
+     }
+     #user :nth-child(4) button{
+        color: #fff;
      }
 
         #logo{
@@ -106,21 +119,33 @@
         }
        #domain {
         display: flex;
-        border:1px  #ad3000 solid ;
+      
     
        }
 
 
-        #domain div{
+        #domain>div{
                   display: flex;
                   justify-content: center;
                   width: 35%;
+                  margin: auto;
+                  border-radius: 5px;
+                  background-color: #fff;
+             
+       }
+       #domain select{
+         outline: none;
+        border: none;
+        border-left: 1px solid black;
        }
 
        #domain input{
         width:70%;
        font-size: 18px;   
        height: 100%; 
+       outline: none;
+       
+     
     }
 
     #domain input::placeholder{
@@ -132,13 +157,31 @@
 
        #flag{
         display: flex;
-        width: 7%;
-        height: 70%;
+        width: 6%;
+        height: 10%;
         margin-left: 15px;
+      margin-right: 5%
+       }
+
+       #submit{
+        background-color: #f84600;
+        border: none;
+        color: #fff;
+        font-family: sans-serif;
+        padding: 15px 30px;
+        display: flex;
+        margin: auto;
+        font-size: 18px;
+        border-radius:10px ;
+        position: relative;
+        top:-2.5em;
+        left:20em
+
 
        }
-       
-
+       #submit:hover{
+        background-color: #ad3000;
+       }
    
         #secondDiv>h1{
             width: 50%;
@@ -146,7 +189,9 @@
             font-size: 350%;
             margin-bottom: 3%;
         }
-
+        #services button:hover{
+        background-color:#ad3000;
+    }
         #services{
             width: 90%;
             align-items: center;
@@ -392,16 +437,25 @@
 
     #growth{
         display: flex;
-        width: 70%;
+        width: 80%;
         margin: auto;
         justify-content: space-between;
         font-family: sans-serif;
-     margin-top: 10%
+       margin-top: 10%;
+       background-image: url(bc.png);
+        background-position: 37em 1em;
+       background-size: 58%;
+       padding-top: 5%;
+       padding-right: 5%;
+       padding-bottom: 10%;
+       background-repeat: no-repeat;
   
     }
     #growth>div{
         width: 50%;
        line-height: 25px;
+   
+       
 
     }
 
@@ -416,15 +470,21 @@
       width: 40%;
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat(2,100px);
+      grid-template-rows: repeat(2,110px);
       gap: 10px;
       margin-top: 3%;
-
+    
     }
     #growth>div+div>div{
         box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1px 20px;
         border-radius: 5px;
-        padding: 5%;
+        background-color: #fff;
+    }
+    #growth button:hover{
+        background-color:#ad3000;
+    }
+    #ceo button:hover{
+        background-color:#ad3000;
     }
     #growth p{
         margin-left: 5%;
@@ -487,35 +547,41 @@
          margin: auto;
          width: 80%;
          text-align: center;
-         margin-top: 20%;
+         margin-top: 10%;
          font-family: sans-serif;
-         margin-bottom: 20%;
+         margin-bottom: 10%;
+    }
+
+    #feedbacks h1{
+        font-family: sans-serif;
+        font-size: 3em;
     }
     #feedbacks span{
             color: rgb(255,98,45);
-            font-size: 250%;
-            text-align:calc();
+            font-size: 2.5em;
            
     }
     
 #feedbacks div{
-        margin-top: 5%;
+        margin-top: 3%;
         width:100% ;
 }
 
 #feedbacks button{
     font-family: lnter, sans-serif;
-    padding: 7px 15px;
-    border-radius: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
     margin: 1%;
-    border:1px solid grey;
+    border:1px solid rgb(211,214,221);
     background-color: transparent;
+    font-size: 18px;
 }
 #feedbacks button:hover{
-    
-    background-color: rgb(66,25,131);
+    border:1px solid rgb(66,25,131)
+}
+#feedbacks button:focus{
+    background-color:  rgb(66,25,131);
     color: #fff;
-    border:rgb(66,25,131)
 }
 
 #feedbacks>div:nth-child(3){
@@ -531,26 +597,41 @@
     padding-top: 5%;
     margin-bottom: 5%;
     display: flex;
+    font-weight: bold;
+    font-size: 1.2em;
+   
     }
 
     #feedbacks>div:nth-child(3)>div>div{
         margin-top: 1%;
+        color: rgb(23,26,34);
     }
     #feedbacks>div:nth-child(3)>h2{
         text-align: center;
         margin: auto;
           width: 70%;
+          font-size: 2em;
           margin-bottom: 5%;
+          line-height: 40px;
+          color: rgb(23,26,34);
     }
     #feedbacks img{
         width: 8%;
         border-radius: 50%;
     }
-    #feedbacks h5:last-child{
+    #feedbacks h4:last-child{
        color:rgb(150,176,191);
        font-weight: 300;
      margin-top: -15px;
+     font-size: 1.3em;
      padding-bottom: 3%;
+     line-height: 50px;
+    }
+    #feedbacks p{
+        color: rgb(23,26,34);
+        font-weight: bold;
+        font-size: 1.25em;  
+          line-height: 50px;
     }
 
     #trial{
@@ -560,6 +641,7 @@
         text-align: center;
         line-height: 50px;
         padding: 5%;
+        
     }
 
     #trial>button{
@@ -568,10 +650,20 @@
        border: none;
        margin-top: 3%;
        border-radius: 5px;
-       padding: 10px 9%;
+       padding: 15px 7%;
+       font-size: 1.2em;
   
      
     }
+
+    #trial>h1{
+        font-size: 2.7em;
+    }
+
+    #trial > p{
+         font-size: 1.3em;
+    }
+
     #trial>button:hover{
         background-color:#ad3000;
     }
@@ -601,6 +693,7 @@
     padding: 15px 10px;
     border-radius: 5px;
     
+    
  }
 
  #footer>div:first-child>div:nth-child(2){
@@ -613,15 +706,25 @@
  }
 
  #footer p{
-    width: 30%;
+    width: 24%;
+    line-height: 20px;
+    font-size: .8em;
+    color:rgb(85,97,106)
+ }
+ #footer u:hover{
+      color: #fff;
  }
  #footer button{
     color: #fff;
     background-color:rgb(0,188,152) ;
     border: none;
-    padding: 10px 30px;
+    padding: 1em 5em;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
+ }
+ #footer button:hover{
+   background-color:  #008275;
+      
  }
  #footer>div:first-child>div>p:last-child{
     width: 100%;
@@ -636,7 +739,7 @@
     border: 1px solid rgb(82,86,90);
     border-radius: 10px;
     text-align: center;
-    padding: 2%;
+    padding: 1.5%;
   margin-top: 5%;
   width: 86%;
  }
@@ -646,16 +749,20 @@
                   align-items: center;
                   justify-content: center;
                   margin-left:1% ;
-                  margin-top: -2px ;
                   width:20%;
                  
                 }
 
- #footer>div:nth-child(2) img{
-    margin-right: 1%;
-    width: 10%;
+ #footer>div:nth-child(2) #mail{
+    margin-right: 5%;
  }
- 
+ #footer #email:hover , #footer #email>p:hover{
+    color: white;
+ }
+ #footer>div:nth-child(2) p{
+    font-size: .9em;
+
+ }
  #footer a{
     text-decoration: none;
     color:  rgb(137,141,154);
@@ -736,7 +843,7 @@
                 &nbsp
                 <a href="login.html">  <button> Log In</button></a>
                <a href="signup.html"><button>Sign Up</button></a> 
-
+                
         </div>
         
        </div>
@@ -754,11 +861,15 @@
        <div>
           <input type="text" placeholder="Enter domain, keyword or URL">
           <img  id="flag" src="https://cdn-icons-png.flaticon.com/512/555/555526.png" alt=""> 
-       </div>
-            <button>submit</button>
+          <select name="" id="">
+            <option value="">English</option>
+            <option value="">Germany</option>
+          </select>
+        </div>
+            
  </div>
 
-
+  <button id="submit">Submit</button>
 
 
 
@@ -876,12 +987,6 @@
 
   
     </div>
-<h1>See what's inside</h1>
-<div></div>
-
-    <div>
-
-    </div>
 
 
 
@@ -921,13 +1026,13 @@
             <button>Social media</button>
          </div>
          <div>
-              <div>&#8592; <div> 1/4 </div>  &#8594;</div>
+              <div>&#8592; <div> 1 / 4 </div>  &#8594;</div>
         
         
             <h2>"I've been using Semrush for 7+ years now and heavily rely on it to help me move whatever site I'm working on to the top of Google."</h2>
             <img src="https://cdn.semrush.com/static/index/testimonials/Casey_Camilleri_Marx.335cc28f69cb.webp" alt="">
             <p>  Casey Camilleri Marx</p>
-            <h5>Digital Marketing Directior, Nlyte Software</h5>
+            <h4>Digital Marketing Directior, Nlyte Software</h4>
 
          </div>
   </div>
@@ -964,7 +1069,7 @@
     </div>
     <div>
         <p>USA, 800 Boylston Street, Suite 2475, Boston, MA 02199</p>
-       <div id="email"><img src="email.png" alt=""> <p>mail@semrush.com</p></div>
+       <div id="email"> <i id="mail" class="fa fa-envelope" aria-hidden="true"></i> <p>mail@semrush.com</p></div>
 
     </div>
     <div id="allLinks">

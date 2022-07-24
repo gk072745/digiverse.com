@@ -9,12 +9,21 @@
     body>div{
         display: flex;
     }
+    #logo{
+        position: absolute;
+        top: 1.5em;
+        left: 2em;
+        width: 10%;
+    }
     #leftDiv{
         width: 50%;
         border: 2px solid red;
         font-family: sans-serif;
         
-    }       
+    }  
+    #leftDiv>h2{
+        padding: 10% 0% 0% 20%;
+    }     
     #google{
         display: flex;
         border: 1px solid rgb(224, 210, 210);
@@ -22,7 +31,7 @@
          align-items: center;
          justify-content: space-around;
          height: 27px;
-         width: 100%;
+         width: 70%;
          color: rgb(194, 191, 191);
         
     }
@@ -65,13 +74,13 @@ label{
 
 </style>
 <body>
-    <div>
+    <div>  <img id="logo" src="https://www.semrush.com/lp/sem-aeoy/img/logo.svg" alt="">
         <div id="leftDiv">
 
-            <img src="https://www.semrush.com/lp/sem-aeoy/img/logo.svg" alt="">
-          <div> <h1>Log in</h1>
+          
+            <h2>Log in</h2>
             <div id="google"><img src="https://www.semrush.com/static/images/IconGoogle.840359a84e4fa263c9995938755cb02f.svg" alt="">
-                  <picture>Log in with Google</picture>
+                  <p>Log in with Google</p>
             </div>
             <form action="">
                 <label for="">Email</label>
