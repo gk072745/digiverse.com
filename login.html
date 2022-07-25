@@ -7,100 +7,123 @@
 </head>
 <style>
     body>div{
-        display: flex;
-    }
-    #logo{
-        position: absolute;
-        top: 1.5em;
-        left: 2em;
-        width: 10%;
-    }
-    #leftDiv{
-        width: 50%;
-        border: 2px solid red;
         font-family: sans-serif;
-        
-    }  
-    #leftDiv>h2{
-        padding: 10% 0% 0% 20%;
-    }     
-    #google{
         display: flex;
-        border: 1px solid rgb(224, 210, 210);
-        border-radius: 3px;
-         align-items: center;
-         justify-content: space-around;
-         height: 27px;
-         width: 70%;
-         color: rgb(194, 191, 191);
-        
+  
     }
-    #google>img{     
-        height:60%;
-    }
-    form{
-        width: 30%;
-        margin: auto;  
+    #left{
+        width: 25%;
+        padding:5% 15% ;
+        line-height: 50px
        
     }
-    
-    #leftDiv>div{
-        width:58%;
-        margin: auto
+    #google>div:first-child{
+        margin: 0 5%;
     }
-    
-    input{
-        margin: 5px;
+    #google>div:last-child{
+        text-align: center;
+        width: 90%;
+        
     }
-    
    
-#rightDiv{
+    #google{
+        display: flex;
+        border: 1px solid rgb(182, 182, 182);
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 1em;
+    }
+    #hr{
+        display: flex;
+        width: 100%;
+         justify-content: center;
+     
+    }
+    form{
+        border: 0px solid red;
+
+    }
+    input{
+        width: 100%;
+        padding: 3% 0%;
+        border-radius: 5px;
+        border:1px solid rgb(168, 159, 159)
+    }
+
+    form>a{
+        color: rgb(255,100,45);
+        text-align: right;
+     text-decoration: none;
+     
+     display: flex;
+   justify-content: end;
+    }
+    form>a:hover{
+    text-decoration: underline; 
+   
+    }
+
+    #submit{
+        background-color: rgb(255,100,45);
+        color: white;
+        font-size:20px ;
+    }
+  #signIn{
+    color: grey;
+  }
+  #signIn a{
+    text-decoration: none;
+    color: rgb(255,100,45);
+  }
+  #signIn a:hover{
+    text-decoration: underline;
+  }
+  #left>a{
+    color: rgb(255,100,45);
+    text-decoration: none;
+  }
+  #left>a:hover{
+    text-decoration: underline;
+  }
+  #right>img{
     width: 50%;
-    background-color:rgb(24, 106, 179);
+  }
+  #right{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-#rightDiv img{
-    width: 70%;
-
-   
-}
-label{
-    width: 100%;
-    border: 1px solid red;
-}
-
+    width: 50%;
+    background-color:rgb(110,219,255) ;
+  }
 </style>
 <body>
-    <div>  <img id="logo" src="https://www.semrush.com/lp/sem-aeoy/img/logo.svg" alt="">
-        <div id="leftDiv">
+         <img src="https://www.semrush.com/static/images/semrush-logo-small.65111a70bc78fa1d295b6cea65680c1d.svg" alt="">  
+         <div>
+            <div id="left">
+                    <h2>Log in</h2>
+                    <div id="google">
+                          <div><img src="https://www.semrush.com/static/images/IconGoogle.840359a84e4fa263c9995938755cb02f.svg" alt=""></div>
+                          <div>Log in with Google</div> 
+                    </div>
+                          <div id="hr"> or </div>
+                          <form action="">
+                            <label for="">Email</label>
+                            <input type="email">
+                            <label for="">Password</label>
+                            <input type="password">
+                            <a href="">Forget your password?</a>
+                            <input type="submit" name="" id="submit" value="Log in">
+                            
+                          </form>
+                        <div id="signIn">don't have a Semrush account? <a href="">Sign up</a></div> 
+                        <a href="">Log in with SAML</a>        
+                    </div>
+           
 
-          
-            <h2>Log in</h2>
-            <div id="google"><img src="https://www.semrush.com/static/images/IconGoogle.840359a84e4fa263c9995938755cb02f.svg" alt="">
-                  <p>Log in with Google</p>
+            <div id="right">
+               <img src="https://www.semrush.com/static/images/semrushman.4deb494408156a6748f227586cd1491c.svg" alt="">
             </div>
-            <form action="">
-                <label for="">Email</label>
-                <input type="Email">
-                <label for="">Password</label>
-                <input type="password">
-                <a href="">Forget your password</a>
-                <input type="submit">
-                <p>Don’t have a Semrush account? <a href="">Sign up</a></p>
-                <a href="">Log in with SAML</a>
-             </form>     
-            </div> 
-        </div>
-
-        <div id="rightDiv">
-                <img src="https://www.semrush.com/static/images/semrushman.4deb494408156a6748f227586cd1491c.svg" alt="">
-            
-        </div>
-    </div>
-
+         </div> 
 </body>
 </html>
 <script>
