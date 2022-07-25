@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body>div{
+        font-family: sans-serif;
+        display: flex;
+  
+    }
+    #left{
+        width: 25%;
+        padding:5% 15% ;
+        line-height: 50px
+       
+    }
+    #google>div:first-child{
+        margin: 0% 5%;
+    }
+    #google>div:last-child{
+        text-align: center;
+        width: 90%;
+        
+    }
+   
+    #google{
+        display: flex;
+        border: 1px solid rgb(182, 182, 182);
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 1em;
+        
+    }
+    #hr{
+        display: flex;
+        width: 100%;
+         justify-content: center;
+     
+    }
+    form{
+        border: 0px solid red;
+
+    }
+    input{
+        width: 100%;
+        padding: 3% 0%;
+        border-radius: 5px;
+        border:1px solid rgb(168, 159, 159)
+    }
+
+    form>a{
+        color: rgb(255,100,45);
+        text-align: right;
+     text-decoration: none;
+     
+     display: flex;
+   justify-content: end;
+    }
+    form>a:hover{
+    text-decoration: underline; 
+   
+    }
+
+    #submit{
+        background-color: rgb(255,100,45);
+        color: white;
+        font-size:20px ;
+    }
+  #signIn{
+    color: grey;
+  }
+  #signIn a{
+    text-decoration: none;
+    color: rgb(255,100,45);
+  }
+  #signIn a:hover{
+    text-decoration: underline;
+  }
+  #left>a{
+    color: rgb(255,100,45);
+    text-decoration: none;
+  }
+  #left>a:hover{
+    text-decoration: underline;
+  }
+  #right>img{
+    width: 50%;
+  }
+  #right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color:rgb(110,219,255) ;
+  }
+</style>
+<body>
+         <img src="https://www.semrush.com/static/images/semrush-logo-small.65111a70bc78fa1d295b6cea65680c1d.svg" alt="">  
+         <div>
+            <div id="left">
+                    <h2>Log in</h2>
+                    <div id="google">
+                          <div><img src="https://www.semrush.com/static/images/IconGoogle.840359a84e4fa263c9995938755cb02f.svg" alt=""></div>
+                          <div>Log in with Google</div> 
+                    </div>
+                          <div id="hr"> or </div>
+                          <form action="">
+                            <label for="">Email</label>
+                            <input type="email">
+                            <label for="">Password</label>
+                            <input type="password">
+                            <a href="">Forget your password?</a>
+                            <input type="submit" name="" id="submit" value="Log in">
+                            
+                          </form>
+                        <div id="signIn">don't have a Semrush account? <a href="">Sign up</a></div> 
+                        <a href="">Log in with SAML</a>        
+                    </div>
+           
+
+            <div id="right">
+               <img src="https://www.semrush.com/static/images/semrushman.4deb494408156a6748f227586cd1491c.svg" alt="">
+            </div>
+         </div> 
+</body>
+</html>
+<script>
+
+</script>
