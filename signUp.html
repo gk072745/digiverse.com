@@ -6,10 +6,6 @@
     <title>Document</title>
 </head>
 <style>
-#submit:hover{
-        background-color: #ad3000;
-    }
-
     body>div{
         font-family: sans-serif;
         display: flex;
@@ -18,7 +14,8 @@
     #left{
         width: 25%;
         padding:5% 15% ;
-        line-height: 50px
+        line-height: 50px;
+        border-radius:  0 10px 10px 0;
                
     }
     #google>div:first-child{
@@ -63,15 +60,18 @@
      display: flex;
    justify-content: end;
     }
-    form>a:hover{
-    text-decoration: underline; 
    
-    }
+    
 
     #submit{
         background-color: rgb(255,100,45);
         color: white;
         font-size:20px ;
+        margin-top: 10%;
+    }
+
+    #submit:hover{
+        background-color: #ad3000;
     }
   #signIn{
     color: grey;
@@ -94,21 +94,28 @@
     width: 50%;
   }
   #right{
+    background-color: rgb(184,128,255);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    background-color:rgb(110,219,255) ;
+
+  }
+
+  #right h2{
+    width: 70%;
+    text-align: center;
+    color: aliceblue;
   }
 </style>
 <body>
          <img src="https://www.semrush.com/static/images/semrush-logo-small.65111a70bc78fa1d295b6cea65680c1d.svg" alt="">  
          <div>
             <div id="left">
-                    <h2>Log in</h2>
+                    <h2>Sign up</h2>
                     <div id="google">
                           <div><img src="https://www.semrush.com/static/images/IconGoogle.840359a84e4fa263c9995938755cb02f.svg" alt=""></div>
-                          <div>Log in with Google</div> 
+                          <div>Sign up with Google</div> 
                     </div>
                           <div id="hr"> or </div>
                           <form action="">
@@ -116,17 +123,16 @@
                             <input type="email">
                             <label for="">Password</label>
                             <input type="password">
-                            <a href="">Forget your password?</a>
-                            <input type="submit" name="" id="submit" value="Log in">
+                            <input type="submit" name="" id="submit" value="Sign up">
                             
                           </form>
-                        <div id="signIn">don't have a Semrush account? <a href="signUp.html">Sign up</a></div> 
+                        <div id="signIn">Already have an account <a href="login.html">Log in</a></div> 
                         <a href="">Log in with SAML</a>        
                     </div>
            
 
             <div id="right">
-               <img src="https://www.semrush.com/static/images/semrushman.4deb494408156a6748f227586cd1491c.svg" alt="">
+             <h2>By using Semrush, my team saves a lot of time by working on the right content and in a more data-driven way.</h2>
             </div>
          </div> 
 </body>
