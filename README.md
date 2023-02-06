@@ -16,3 +16,6 @@ A individual project built by Govind Kumawat in 5 days.
 - HTML
 - CSS
 - JAVASCRIPT
+
+## Preview 💻
+[![digiverse](https://i.postimg.cc/HWXVGnCR/Screenshot-441.png)](https://postimg.cc/K4cZBZjD)
