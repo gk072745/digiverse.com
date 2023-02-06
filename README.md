@@ -17,5 +17,5 @@ A individual project built by Govind Kumawat in 5 days.
 - CSS
 - JAVASCRIPT
 
+<img src="https://i.postimg.cc/HWXVGnCR/Screenshot-441.png" />
 
-[![doubtful](https://i.postimg.cc/HWXVGnCR/Screenshot-441.png)](https://i.postimg.cc/HWXVGnCR/Screenshot-441.png)
