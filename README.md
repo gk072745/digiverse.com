@@ -18,4 +18,4 @@ A individual project built by Govind Kumawat in 5 days.
 - JAVASCRIPT
 
 ## Preview 💻
-![image](https://i.postimg.cc/HWXVGnCR/Screenshot-441.png)
+![image](https://user-images.githubusercontent.com/61157473/208610772-2a65fc95-7ca5-4fcb-abd4-a1210f816fb2.png)
